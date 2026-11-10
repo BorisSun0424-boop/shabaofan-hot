@@ -1,6 +1,6 @@
 {
   "name": "shabaofan-hot",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "沙煲饭热点：DeepSeek Harness 侧边栏热榜。打开条目自动生成带小标题中文介绍；乔木式排版、预览图、北京时间每日批量生成",
   "type": "module",
   "main": "index.js",

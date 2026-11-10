@@ -111,7 +111,9 @@ function testClientLoad() {
         assert.match(src, /沙煲饭热点/);
         const pkg = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"));
         assert.equal(pkg.name, "shabaofan-hot");
-        assert.equal(pkg.version, "0.5.1");
+        assert.match(src, /id: "shabaofan-hot"/);
+        assert.doesNotMatch(src, /id: "dsh-trending-digest"/);
+        assert.equal(pkg.version, "0.5.2");
         assert.equal(pkg.private, undefined);
 
         // descriptors present in source
