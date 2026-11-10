@@ -47,7 +47,7 @@ dsh plugin --profile desktop add github:BorisSun0424-boop/shabaofan-hot
 也可以安装已经打好的安装包：
 
 ```bash
-dsh plugin --profile desktop add ./shabaofan-hot-0.5.2.tgz
+dsh plugin --profile desktop add ./shabaofan-hot-0.5.3.tgz
 ```
 
 装完同样需要 **Cmd+Q 完全退出**再打开。

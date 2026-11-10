@@ -113,7 +113,8 @@ function testClientLoad() {
         assert.equal(pkg.name, "shabaofan-hot");
         assert.match(src, /id: "shabaofan-hot"/);
         assert.doesNotMatch(src, /id: "dsh-trending-digest"/);
-        assert.equal(pkg.version, "0.5.2");
+        assert.equal(pkg.version, "0.5.3");
+        assert.doesNotMatch(src, /\.td-refresh[^{]*\{[^}]*color:#fff/);
         assert.equal(pkg.private, undefined);
 
         // descriptors present in source
