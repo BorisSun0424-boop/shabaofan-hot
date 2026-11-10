@@ -1,0 +1,5 @@
+# shabaofan-hot · 宿主插件行（bundle patch，由 dsh.profile.bundles 自动应用）
+# cordis 行 id 保持 trending-digest，避免打断本机已有配置
+- insert:
+    - id: trending-digest
+      name: shabaofan-hot

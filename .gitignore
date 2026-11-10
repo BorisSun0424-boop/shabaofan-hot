@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# packs and local artifacts
+*.tgz
+.DS_Store
+*.log
+npm-debug.log*
+.plugin-manager/
+
+# local backups / secrets
+.backup-*/
+.env
+.env.*
+*.pem
+*.key
+credentials*
+.npmrc
+
+# editor
+.idea/
+.vscode/

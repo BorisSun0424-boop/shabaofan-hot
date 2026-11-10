@@ -1,0 +1,97 @@
+{
+  "name": "shabaofan-hot",
+  "version": "0.5.0",
+  "description": "沙煲饭热点：DeepSeek Harness 侧边栏热榜。打开条目自动生成带小标题中文介绍；乔木式排版、预览图、北京时间每日批量生成",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "勃帆 孙",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BorisSun0424-boop/shabaofan-hot.git"
+  },
+  "homepage": "https://github.com/BorisSun0424-boop/shabaofan-hot#readme",
+  "bugs": {
+    "url": "https://github.com/BorisSun0424-boop/shabaofan-hot/issues"
+  },
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": "0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "shabaofan-hot",
+    "github-trending",
+    "product-hunt",
+    "google-trends",
+    "digest",
+    "sidebar"
+  ],
+  "scripts": {
+    "test": "node tests/smoke.mjs",
+    "pack": "npm pack"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "meta": {
+      "title": "沙煲饭热点",
+      "description": "侧边栏双栏阅读：GitHub热榜、Product Hunt趋势、Google Trend；打开条目即自动生成带小标题中文介绍，并展示预览图"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-api-gateway",
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.5",
+    "@deepseek-ai/dsh-tools": "0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5",
+    "@deepseek-ai/dsh-typert-protocol": "0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5",
+    "@deepseek-ai/dsh-llm": "0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5",
+    "@deepseek-ai/dsh-agent-default-model": "0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5",
+    "@deepseek-ai/dsh-home-paths": "0.2.1-rc.2 || 0.2.1-rc.3 || 0.2.1-rc.4 || 0.2.1-rc.5"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-typert-protocol": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-llm": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-agent-default-model": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-home-paths": {
+      "optional": true
+    }
+  }
+}
