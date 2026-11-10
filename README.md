@@ -2,7 +2,7 @@
 
 DeepSeek Harness 侧边栏插件。打开后是乔木式左列表 / 右文章，板块为 **GitHub热榜**、**Product Hunt趋势**、**Google Trend**（默认美国 US；Google 没有真正的「全球」Trending Now RSS）。点开条目会自动生成带小标题的分段中文介绍（已有缓存则直接显示，不耗额度），并尽量展示预览图。
 
-支持的 DeepSeek Harness 版本：`0.2.1-rc.2` 到 `0.2.1-rc.5`。
+支持的 DeepSeek Harness 版本：`0.2.1-rc.2` 到 `0.2.1-rc.5`，以及 `0.2.2-rc.1`。
 
 ## 在「添加插件」对话框安装
 
@@ -47,7 +47,7 @@ dsh plugin --profile desktop add github:BorisSun0424-boop/shabaofan-hot
 也可以安装已经打好的安装包：
 
 ```bash
-dsh plugin --profile desktop add ./shabaofan-hot-0.5.0.tgz
+dsh plugin --profile desktop add ./shabaofan-hot-0.5.1.tgz
 ```
 
 装完同样需要 **Cmd+Q 完全退出**再打开。
